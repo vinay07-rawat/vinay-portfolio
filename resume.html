@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinay Singh Rawat | Resume</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Special styles just for the Resume Page */
+        .resume-container {
+            max-width: 900px;
+            margin: 120px auto 40px;
+            padding: 3rem;
+            background: var(--card-bg);
+            backdrop-filter: blur(16px);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.5);
+            color: var(--text-color);
+        }
+        .resume-header {
+            text-align: center;
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 2rem;
+            margin-bottom: 2rem;
+        }
+        .resume-header h1 {
+            font-size: 3rem;
+            color: var(--accent-color);
+            letter-spacing: 2px;
+            margin-bottom: 0.5rem;
+            text-shadow: 0 0 10px var(--accent-glow);
+        }
+        .resume-contact {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            color: var(--subtext-color);
+            font-size: 1rem;
+        }
+        .resume-contact a {
+            color: var(--accent-color);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .resume-contact a:hover {
+            color: #fff;
+        }
+        .section-title {
+            font-size: 1.6rem;
+            color: var(--accent-color);
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .section-title::after {
+            content: "";
+            flex: 1;
+            height: 1px;
+            background: var(--border-color);
+        }
+        .resume-item {
+            margin-bottom: 1.8rem;
+        }
+        .resume-item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 0.5rem;
+        }
+        .resume-item-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #fff;
+        }
+        .resume-item-subtitle {
+            color: var(--accent-color);
+            font-weight: 600;
+            font-size: 1.05rem;
+        }
+        .resume-item-date {
+            color: var(--subtext-color);
+            font-size: 0.95rem;
+            font-style: italic;
+        }
+        .resume-list {
+            padding-left: 1.5rem;
+            color: var(--subtext-color);
+            line-height: 1.8;
+        }
+        .resume-list li {
+            margin-bottom: 0.4rem;
+        }
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            color: var(--subtext-color);
+        }
+        .skills-grid strong {
+            color: #fff;
+            display: block;
+            margin-bottom: 0.3rem;
+        }
+        
+        /* Print Styles - To make it look perfect when saved as PDF */
+        @media print {
+            body { background: #fff; color: #000; }
+            header, .cursor-glow, .bg-slider, .bg-overlay, .print-btn { display: none !important; }
+            .resume-container { 
+                margin: 0; padding: 0; box-shadow: none; border: none; background: transparent; 
+                max-width: 100%;
+            }
+            .resume-header h1, .section-title, .resume-item-subtitle { color: #000 !important; text-shadow: none; }
+            .resume-contact a, .resume-item-title { color: #000 !important; }
+            .resume-list, .resume-contact, .resume-item-date, .skills-grid { color: #333 !important; }
+            .section-title::after { background: #ccc; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Light Glow Effect -->
+    <div class="bg-overlay"></div>
+
+    <!-- Header Navigation -->
+    <header>
+        <nav>
+            <div class="left-nav">
+                <a href="index.html" style="text-decoration: none;">
+                    <div class="logo">Vinay<span>.dev</span></div>
+                </a>
+            </div>
+            <div style="display: flex; gap: 1rem; align-items: center;">
+                <button onclick="window.print()" class="btn btn-primary print-btn" style="padding: 0.4rem 1rem; font-size: 0.9rem;">🖨️ Save as PDF</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="resume-container">
+            
+            <!-- HEADER -->
+            <div class="resume-header">
+                <h1>VINAY SINGH RAWAT</h1>
+                <p style="font-size: 1.3rem; color: #fff; margin-bottom: 1rem; letter-spacing: 1px;">Tech Developer & Operations Specialist</p>
+                <div class="resume-contact">
+                    <span>📍 Dehradun, Uttarakhand, India</span>
+                    <span>📞 +91 7505007905</span>
+                    <a href="https://wa.me/917505007905" target="_blank">💬 WhatsApp</a>
+                    <a href="https://linkedin.com/in/vinay-singh-rawat-91a545317" target="_blank">💼 LinkedIn</a>
+                    <a href="https://github.com/vinay07-rawat" target="_blank">💻 GitHub</a>
+                </div>
+            </div>
+
+            <!-- SUMMARY -->
+            <div class="resume-item">
+                <p style="color: var(--subtext-color); line-height: 1.8; font-size: 1.05rem;">
+                    Dynamic professional bridging technology execution with enterprise business strategy. Offering a unique blend of Full-Stack Web Development, Data Analytics, and 1+ year of hands-on experience in Operations Management and Client Relations. Proven ability to optimize workflows, lead field operations, and deploy data-driven applications that enhance business growth and customer retention.
+                </p>
+            </div>
+
+            <!-- EXPERIENCE -->
+            <h2 class="section-title">Professional Experience</h2>
+            
+            <div class="resume-item">
+                <div class="resume-item-header">
+                    <div>
+                        <div class="resume-item-title">Field Officer</div>
+                        <div class="resume-item-subtitle">Guardians Security and Facilities Solution Pvt Ltd</div>
+                    </div>
+                </div>
+                <ul class="resume-list">
+                    <li>Led field operations and comprehensive site audits to ensure strict adherence to company standards and regulatory compliance.</li>
+                    <li>Managed staff supervision, team coordination, and HR compliance frameworks including PF and ESI regulations.</li>
+                    <li>Spearheaded client relationship management (CRM), conducting strategic B2B meetings and leveraging regional language proficiency to ensure high-trust negotiation and zero-drop client retention.</li>
+                    <li>Optimized daily operational workflows by bridging on-ground execution with management strategies.</li>
+                </ul>
+            </div>
+
+            <!-- PROJECTS -->
+            <h2 class="section-title">Technical Projects</h2>
+            
+            <div class="resume-item">
+                <div class="resume-item-header">
+                    <div>
+                        <div class="resume-item-title">Devbhoomi - Uttarakhand Tourism & Data Analytics</div>
+                        <div class="resume-item-subtitle">Full-Stack Data Portal</div>
+                    </div>
+                    <div class="resume-item-date"><a href="https://vinay07-rawat.github.io/Adventure-Uttarakhand-vinnu/" target="_blank" style="color: var(--accent-color); text-decoration: none;">View Live ↗</a></div>
+                </div>
+                <ul class="resume-list">
+                    <li>Engineered an advanced tourism and data analytics portal showcasing the historical and economic impact of 22 key destinations using HTML5, CSS3 (Glassmorphism), Vanilla JS, and Chart.js.</li>
+                    <li>Integrated a direct WhatsApp Booking Engine API for real-time lead generation and management.</li>
+                    <li>Developed a Bilingual Smart Search matrix tracking tourist footfall and revenue insights.</li>
+                </ul>
+            </div>
+
+            <div class="resume-item">
+                <div class="resume-item-header">
+                    <div>
+                        <div class="resume-item-title">V V & V Bazaar</div>
+                        <div class="resume-item-subtitle">Dynamic E-Commerce Web Application</div>
+                    </div>
+                    <div class="resume-item-date"><a href="https://vvv-bazaar.vercel.app" target="_blank" style="color: var(--accent-color); text-decoration: none;">View Live ↗</a></div>
+                </div>
+                <ul class="resume-list">
+                    <li>Deployed a multi-category e-commerce platform using React.js, Vite, and ES6+ JavaScript, hosted on Vercel.</li>
+                    <li>Implemented a secure Admin Dashboard, dynamic LocalStorage-based user sessions, and a fully functional product review/rating system.</li>
+                </ul>
+            </div>
+
+            <!-- EDUCATION -->
+            <h2 class="section-title">Education</h2>
+            
+            <div class="resume-item">
+                <div class="resume-item-header">
+                    <div>
+                        <div class="resume-item-title">Bachelor of Computer Applications (BCA)</div>
+                        <div class="resume-item-subtitle">Institute of Technology and Management</div>
+                    </div>
+                    <div class="resume-item-date">Expected Graduation: June 2027</div>
+                </div>
+                <ul class="resume-list">
+                    <li>Focus: Software Engineering, Data Systems, and Web Development.</li>
+                    <li>Preparing for CAT to pursue a Master of Business Administration (MBA), integrating pure tech expertise with advanced management principles.</li>
+                </ul>
+            </div>
+
+            <!-- SKILLS -->
+            <h2 class="section-title">Skills & Proficiencies</h2>
+            
+            <div class="skills-grid">
+                <div>
+                    <strong>Programming & Web</strong>
+                    C, C++, Python, R, JavaScript (ES6+), HTML5, CSS3, React.js, Node.js.
+                </div>
+                <div>
+                    <strong>Data & Analytics</strong>
+                    Microsoft Power BI, MySQL, Chart.js, Advanced Excel, Data Visualization.
+                </div>
+                <div>
+                    <strong>Operations & Management</strong>
+                    Site Audits, Team Coordination, HR Compliance (PF/ESI), NBFC Operations, CRM.
+                </div>
+                <div>
+                    <strong>Soft Skills</strong>
+                    Strategic Client Communication, B2B Deal Closing, Native North Indian Languages.
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+</body>
+</html>
