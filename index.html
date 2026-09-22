@@ -231,10 +231,14 @@
                     <h3 style="color: var(--accent-color); font-size: 1.4rem; margin-bottom: 1rem;">⚙️ Operational Strategy & Logistics</h3>
                     <p style="font-size: 1.15rem; color: var(--text-color);">Highlighting hands-on experience in field operations, team management, and strategic logistical planning.</p>
                 </div>
+                <!-- 3. Social Commentary & Blogging -->
                 <div class="glass-card">
                     <h3 style="color: var(--accent-color); font-size: 1.4rem; margin-bottom: 1rem;">✍️ Social Commentary & Blogging</h3>
-                    <p style="font-size: 1.15rem; color: var(--text-color);">A dedicated space for creative content creation, including writing, poetry, and insightful satire on contemporary issues to reflect a unique perspective.</p>
+                    <p style="font-size: 1.15rem; color: var(--text-color); margin-bottom: 1.5rem;">A dedicated space for creative content creation, including writing, poetry, and insightful stories to reflect a unique perspective.</p>
+                    <!-- New Smart Read Button -->
+                    <button onclick="openBlogModal()" class="btn btn-outline" style="padding: 0.6rem 1.4rem; font-size: 1rem; width: 100%;">📖 Read: The Dehradun Diaries</button>
                 </div>
+
                 <div class="glass-card">
                     <h3 style="color: var(--accent-color); font-size: 1.4rem; margin-bottom: 1rem;">🤝 Trust Builders</h3>
                     <p style="font-size: 1.15rem; color: var(--text-color);">Building credibility and client trust through detailed case studies, certifications, and authentic client testimonials.</p>
@@ -371,6 +375,29 @@
         </div>
     </footer>
 
+    <!-- 🌟 BLOG READING POP-UP (MODAL) -->
+    <div id="blogModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 3000; background: rgba(0,0,0,0.8); backdrop-filter: blur(10px); justify-content: center; align-items: center; padding: 20px;">
+        <div style="background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 15px; max-width: 800px; width: 100%; max-height: 85vh; overflow-y: auto; padding: 2.5rem; position: relative; box-shadow: 0 20px 50px rgba(0,0,0,0.5);">
+            <!-- Close Button -->
+            <button onclick="closeBlogModal()" style="position: absolute; top: 15px; right: 20px; background: transparent; border: none; color: var(--accent-color); font-size: 2rem; cursor: pointer;">&times;</button>
+            
+            <!-- Article Content -->
+            <h2 style="color: var(--accent-color); font-size: 2.2rem; margin-bottom: 0.5rem;">देहरादून: एक अनकही प्रेम कहानी</h2>
+            <p style="color: var(--subtext-color); font-style: italic; margin-bottom: 2rem;">Written by Vinay Singh Rawat</p>
+            
+            <div style="color: var(--text-color); font-size: 1.15rem; line-height: 1.9;">
+                <p style="margin-bottom: 1.5rem;">मैं विनय सिंह रावत हूँ, और मेरी सुबहें देहरादून की उसी ताज़ा आबोहवा के बीच होती हैं, जिसकी तलाश में बड़े महानगरों के लोग अक्सर यहाँ का रुख करते हैं।</p>
+                <p style="margin-bottom: 1.5rem;">जब हम 'देहरादून' कहते हैं, तो ज़ेहन में सिर्फ पहाड़ों से घिरा एक शांत शहर नहीं आता। आज का दून पुरानी यादों और आधुनिक विकास का एक बेहतरीन संगम है। एक तरफ जहाँ राजपुर रोड की पुरानी बेकरियों की महक आज भी ज़िंदा है, वहीं दूसरी तरफ पैसिफिक मॉल जैसी शानदार जगहें इस शहर की नई लाइफस्टाइल को परिभाषित करती हैं। पैसिफिक मॉल आज युवाओं और परिवारों के लिए एक प्रमुख केंद्र बन चुका है, जहाँ अंतरराष्ट्रीय प्रीमियम ब्रांड्स, बेहतरीन फूड कोर्ट और आधुनिक सिनेमा की सुविधाएँ यह एहसास दिलाती हैं कि दून अब सुविधाओं के मामले में किसी मेट्रो शहर से कम नहीं है।</p>
+                <p style="margin-bottom: 1.5rem;">यह शहर अब महज़ एक 'रिटायरमेंट का ठिकाना' नहीं रहा; बल्कि आईटी पार्क और दून बिजनेस पार्क की बदौलत यह तेजी से उभरता एक ऐसा 'टेक और बिजनेस हब' बन चुका है, जिसने हजारों युवाओं के सपनों को उड़ान दी है। यहाँ पुरानी कंपनियों का तजुर्बा और नए स्टार्टअप्स का जुनून एक साथ सांस लेते हैं।</p>
+                <p style="margin-bottom: 1.5rem;">अगर ज़मीनी हकीकत की बात करें, तो विकास की इस तेज़ रफ्तार के साथ इस शहर ने कुछ नई चुनौतियाँ भी देखी हैं। सड़कों पर बढ़ती गाड़ियों की तादाद और ट्रैफिक जाम अब यहाँ की रोज़मर्रा की ज़िंदगी का हिस्सा बनने लगे हैं। हालांकि, इस बदलते दून को सँभालने के लिए नए टैक्सी स्टैंड्स की योजनाएँ और स्मार्ट सिटी प्रोजेक्ट्स के तहत चौराहों व सड़कों का चौड़ीकरण ज़ोरों पर है। इन तमाम आधुनिक बदलावों के बीच भी, नीले 'विक्रम' की खटर-पटर, ई-रिक्शा की घंटियां और आईएसबीटी (ISBT) की वो चिर-परिचित हलचल आज भी दून की सड़कों की असली पहचान हैं。</p>
+                <p style="margin-bottom: 1.5rem;">पर्यावरण और एक्यूआई (AQI) के नज़रिए से देखें, तो दिल्ली-एनसीआर की घुटन के मुकाबले देहरादून आज भी बहुत राहत देता है। यह सच है कि बढ़ते शहरीकरण ने यहाँ की आबोहवा में थोड़ा बदलाव किया है, लेकिन मानसून की एक अच्छी बारिश या सर्दियों की शुरुआत में जब मसूरी की तरफ से ठंडी हवाएं दून घाटी में उतरती हैं, तो यह शहर फिर से अपने उसी पुराने, शुद्ध और जादुई रूप में लौट आता है।</p>
+                <p style="margin-bottom: 1.5rem;">इस शहर की सबसे बड़ी खूबसूरती इसकी विविधता में बसती है। यहाँ गढ़वाली, कुमाऊँनी और जौनसारी संस्कृति की सोंधी महक तो है ही, साथ ही देशभर से आए लोगों ने भी इसे अपना घर मान लिया है। पलटन बाज़ार की वो भीड़भाड़ और 'चाट वाली गली' का ज़ायका हर नए मुसाफिर को अपना मुरीद बना लेता है。</p>
+                <p style="margin-bottom: 1.5rem;">मेरी नज़र में, दून सिर्फ एक शहर नहीं—एक परिवार है। आप जेब में कम पैसे लेकर संघर्ष कर रहे एक छात्र हों या नौकरी की तलाश में आए एक नए इंसान; यह शहर आपको कभी अकेला महसूस नहीं होने देता। यहाँ ऐसे कई गुरुद्वारे और लंगर हैं जहाँ कोई भूखा नहीं सोता।</p>
+                <p style="margin-bottom: 1.5rem;">शब्दों में दून को बांधना बहुत मुश्किल है। मेरे पोर्टफोलियो के ज़रिए जो भी इस शहर को जान रहा है, मेरी बस एक ही गुज़ारिश है—ज़िंदगी में एक बार देहरादून की हवाओं से रूबरू ज़रूर हों। यहाँ की बदलती रफ्तार और ठहरी हुई वादियों का यह अनोखा कॉम्बिनेशन आपको कहीं और नहीं मिलेगा。</p>
+            </div>
+        </div>
+    </div>
+
     <!-- JavaScript Engine -->
     <script>
         function toggleSidebar() { document.getElementById('sidebar').classList.toggle('active'); }
@@ -452,6 +479,15 @@
             const whatsappNumber = "917505007905";
             const text = `Hello Vinay,%0A%0AMy Name: ${encodeURIComponent(name)}%0AContact: ${encodeURIComponent(contact)}%0A%0AQuery Message:%0A${encodeURIComponent(message)}`;
             window.open(`https://wa.me/${whatsappNumber}?text=${text}`, '_blank');
+        }
+        // Blog Modal Functions
+        function openBlogModal() {
+            document.getElementById('blogModal').style.display = 'flex';
+            document.body.style.overflow = 'hidden'; // Prevents background scrolling
+        }
+        function closeBlogModal() {
+            document.getElementById('blogModal').style.display = 'none';
+            document.body.style.overflow = 'auto'; // Re-enables background scrolling
         }
     </script>
 </body>
