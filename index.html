@@ -268,11 +268,14 @@
                     </ul>
                     <!-- Keep the existing Dehradun Article Button here -->
                     <button onclick="openBlogModal()" class="btn btn-outline" style="padding: 0.5rem 1rem; font-size: 0.95rem; width: 100%;">📖 Read Sample: The Dehradun Diaries</button>
+                    <!-- Blog Buttons -->
+                    <button onclick="openBlogModal()" class="btn btn-outline" style="padding: 0.5rem 1rem; font-size: 0.95rem; width: 100%; margin-bottom: 0.8rem;">📖 Read: The Dehradun Diaries</button>
+                    <button onclick="openHaldwaniModal()" class="btn btn-outline" style="padding: 0.5rem 1rem; font-size: 0.95rem; width: 100%;">📖 Read: Haldwani - Gateway of Kumaon</button>
                 </div>
 
             </div>
         </section>
-        
+
         <!-- 5️⃣ SKILLS SECTION -->
         <section id="skills">
             <h1 style="font-size: 3rem; color: var(--accent-color); margin-bottom: 0.5rem; font-weight: 800;">Skills & Technical Toolkit</h1>
@@ -424,6 +427,44 @@
             </div>
         </div>
     </div>
+    <!-- 🌟 HALDWANI BLOG POP-UP (MODAL) -->
+    <div id="haldwaniModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 3000; background: rgba(0,0,0,0.8); backdrop-filter: blur(10px); justify-content: center; align-items: center; padding: 20px;">
+        <div style="background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 15px; max-width: 800px; width: 100%; max-height: 85vh; overflow-y: auto; padding: 2.5rem; position: relative; box-shadow: 0 20px 50px rgba(0,0,0,0.5);">
+            <!-- Close Button -->
+            <button onclick="closeHaldwaniModal()" style="position: absolute; top: 15px; right: 20px; background: transparent; border: none; color: var(--accent-color); font-size: 2rem; cursor: pointer;">&times;</button>
+            
+            <!-- Article Content -->
+            <h2 style="color: var(--accent-color); font-size: 2.2rem; margin-bottom: 0.5rem;">हल्द्वानी: कुमाऊँ का प्रवेश द्वार और हमारा अपना घर</h2>
+            <p style="color: var(--subtext-color); font-style: italic; margin-bottom: 2rem;">Written by Vinay Singh Rawat</p>
+            
+            <div style="color: var(--text-color); font-size: 1.15rem; line-height: 1.9;">
+                <div style="background: rgba(56, 189, 248, 0.05); padding: 1.5rem; border-left: 4px solid var(--accent-color); border-radius: 8px; margin-bottom: 2rem; font-style: italic;">
+                    शहर कहूँ या अपना घर मानूँ तुम्हें,<br>
+                    अपनी हर पहचान का आधार मानूँ तुम्हें।<br>
+                    तुमसे ही शुरू होता है हर सफ़र मेरा,<br>
+                    और सुकून का आखिरी मुकाम मानूँ तुम्हें।
+                </div>
+
+                <p style="margin-bottom: 1.5rem;">अगर हम हल्द्वानी की बात करें, तो यह केवल इतिहास के पन्नों में दर्ज कोई शहर नहीं है, बल्कि यह मेरा, आपका और हम सबका घर है। किसी के लिए यह एक नई जीवन-यात्रा का शुभारंभ है, तो किसी के लिए पहाड़ों और नैनीताल की वादियों से जुड़ने का एक बेहद खूबसूरत अनुभव। नैनीताल जिले का यह प्रमुख हिस्सा आज कुमाऊँ का सबसे बड़ा मैदानी, कमर्शियल और ट्रांसपोर्ट हब बन चुका है। इसे 'गेटवे ऑफ कुमाऊँ' कहा जाता है, क्योंकि नैनीताल, अल्मोड़ा, रानीखेत, बागेश्वर, पिथौरागढ़, मुनस्यारी और मुक्तेश्वर जैसे खूबसूरत पहाड़ी क्षेत्रों का सफर यहीं से शुरू होता है।</p>
+                
+                <p style="margin-bottom: 1.5rem;">आज का हल्द्वानी सिर्फ एक शहर तक सीमित नहीं रहा, बल्कि व्यापार और यातायात का एक विशाल अर्बन बेल्ट बन चुका है। काठगोदाम, गौलापार, लामाचौड़, मुखानी, कमलवागांजा, कठघरिया, कालाढूंगी रोड, कुसुमखेड़ा, पीली कोठी, शीशमहल और रुद्रपुर से सीधे जुड़े इसके इकोनॉमिक कॉरिडोर इसके विस्तार की गवाही देते हैं। 2018 में जब हल्द्वानी की म्युनिसिपल बाउंड्री को पेरी-अर्बन क्षेत्रों तक बढ़ाया गया, तो इसके वार्ड 23 से बढ़कर 60 हो गए। कभी एक छोटा सा कस्बा माना जाने वाला यह क्षेत्र आज 4 लाख से अधिक की आबादी वाला एक विशाल महानगर का रूप ले चुका है।</p>
+                
+                <p style="margin-bottom: 1.5rem;">इस शहर का नाम किसी राजा या शासक के नाम पर नहीं, बल्कि 'हल्दू' नामक पेड़ के नाम पर 'हल्द्वानी' पड़ा। यह क्षेत्र भाबर बेल्ट में आता है—हिमालय की तलहटी का वह इलाका जो पहाड़ और तराई के ठीक बीच में बसा है। पुराने समय में यहाँ घनी बसावट नहीं थी; केवल स्थानीय समुदायों और जंगलों के बीच कृषि का एक अनूठा संगम था। लेकिन 1815-1816 में गोरखा शासन के अंत के बाद एक बड़ा टर्निंग पॉइंट आया और यह क्षेत्र व्यापारिक रूप से तेज़ी से आगे बढ़ने लगा।</p>
+                
+                <p style="margin-bottom: 1.5rem;">हल्द्वानी के इतिहास में सबसे बड़ा गेम चेंजर साबित हुआ रेलवे का आगमन। 1880 से 1884 के बीच जब बरेली-काठगोदाम रेलवे लाइन बिछी, तो 24 अप्रैल 1884 तक रेल की छुक-छुक ने इस शहर की तकदीर बदल दी। शुरुआती दौर में हल्द्वानी को अनाज, लकड़ी और कृषि उत्पादों की आवाजाही के लिए जाना गया। इसके बाद पहाड़ों से, खासकर कुमाऊनी और गढ़वाली लोगों ने यहाँ बसना शुरू किया। आज यह शहर विभिन्न संस्कृतियों और दूर-दराज के परिवेश से आए लोगों का एक सुंदर संगम है।</p>
+                
+                <p style="margin-bottom: 1.5rem;">पर्यटन और आस्था के लिहाज से भी हल्द्वानी एक अहम पड़ाव है। कैंची धाम, घोड़ाखाल और नैनीताल के दर्शन करने आने वाले अनगिनत श्रद्धालु अपनी यात्रा के दौरान हल्द्वानी में ठहरना पसंद करते हैं। आज यह कुमाऊँ की इकॉनमी, ट्रांसपोर्ट और रेलवे का एक बहुत बड़ा हिस्सा है, जिसे इस पूरे क्षेत्र की सबसे बड़ी ताकत के रूप में देखा जाता है।</p>
+                
+                <p style="margin-bottom: 1.5rem;">वर्तमान हल्द्वानी की बात करें तो यहाँ कपड़े, इलेक्ट्रॉनिक्स, ज्वेलरी, ग्रोसरी, ऑटोमोबाइल और फर्नीचर के बड़े-बड़े बाजार हैं। यह पहाड़ी क्षेत्रों के लिए होलसेल सप्लाई का मुख्य केंद्र है। शिक्षा और स्वास्थ्य के क्षेत्र में भी हल्द्वानी पूरे कुमाऊँ के लिए सबसे बड़ा हेल्थकेयर और एजुकेशनल डेस्टिनेशन बन चुका है, जहाँ बेहतरीन स्कूल, कॉलेज और कॉम्पिटिटिव एग्जाम का पूरा इकोसिस्टम मौजूद है। रियल एस्टेट, नई कॉलोनियां, कमर्शियल बिल्डिंग्स, कैफे और वी-मार्ट जैसे बड़े रिटेल ब्रांड्स व मॉल्स आज हल्द्वानी को एक आधुनिक और अनूठी पहचान दे रहे हैं।</p>
+                
+                <p style="margin-bottom: 1.5rem;">अगर आप पारंपरिक फास्ट फूड और पहाड़ी जायके के शौकीन हैं, तो हल्द्वानी आपको निराश नहीं करेगा। पहाड़ों से ताजे फल और सब्जियां जब हल्द्वानी के मुख्य केंद्रों में पहुँचते हैं, तो उनका महत्व और भी बढ़ जाता है। कुमाऊँ की इस सबसे बड़ी सब्जी मंडी ने आज ऐसा मुकाम हासिल कर लिया है कि यहाँ से पारंपरिक खान-पान की वस्तुएं और औषधीय जड़ी-बूटियां सिर्फ देश में ही नहीं, बल्कि विदेशों तक निर्यात की जा रही हैं।</p>
+                
+                <p style="margin-bottom: 1.5rem;">राजनीतिक और सामाजिक दृष्टि से भी इस शहर का अपना एक अलग रुतबा है। चाहे वह पूर्व मुख्यमंत्री हरीश रावत हों, वर्तमान मुख्यमंत्री पुष्कर सिंह धामी हों या प्रधानमंत्री नरेंद्र मोदी हों, हल्द्वानी को हमेशा एक विशेष पहचान मिली है। हालांकि यह शहर कभी-कभार विवादों में भी घिरा रहता है, लेकिन वक्त के साथ इसने अपनी एक बेहद मजबूत और सकारात्मक छवि गढ़ी है।</p>
+                
+                <p style="margin-bottom: 1.5rem;">आप यहाँ की मशहूर 'मटर गली' का ही उदाहरण ले लीजिए—एक छोटी और संकरी सी गली, लेकिन यहाँ से एक बार गुजरने वाला शख्स इसकी रौनक को कभी भूल नहीं सकता, जहाँ हर तरह के वस्त्र और साजो-सामान उपलब्ध हैं। यहीं पास में स्थित बस स्टेशन (ISBT) और रेलवे स्टेशन, दिल्ली, मुंबई, पुणे और देहरादून जैसे बड़े शहरों से इस शहर को मजबूती से जोड़ते हैं। हल्द्वानी एक ऐसा शहर है जहाँ की धड़कन में उत्तराखंड के पहाड़ी लोगों की सादगी बसती है, और जहाँ नए लोगों, नए विचारों और विकास का विस्तार कभी नहीं रुकता।</p>
+            </div>
+        </div>
+    </div>
 
     <!-- JavaScript Engine -->
     <script>
@@ -515,6 +556,15 @@
         function closeBlogModal() {
             document.getElementById('blogModal').style.display = 'none';
             document.body.style.overflow = 'auto'; // Re-enables background scrolling
+        }
+        // Haldwani Modal Functions
+        function openHaldwaniModal() {
+            document.getElementById('haldwaniModal').style.display = 'flex';
+            document.body.style.overflow = 'hidden'; 
+        }
+        function closeHaldwaniModal() {
+            document.getElementById('haldwaniModal').style.display = 'none';
+            document.body.style.overflow = 'auto'; 
         }
     </script>
 </body>
