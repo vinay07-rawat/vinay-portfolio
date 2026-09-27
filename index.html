@@ -421,7 +421,7 @@
         function toggleSidebar() { document.getElementById('sidebar').classList.toggle('active'); }
         function toggleTheme() {
             const currentTheme = document.body.getAttribute('data-theme');
-           document.body.setAttribute('data-theme', currentTheme === 'dark' ? 'light' : 'dark');
+           document.body.setAttribute('data-theme', currentTheme === 'light' ? 'dark' : 'light');
         }
 
         const slides = document.querySelectorAll('.bg-slide');
